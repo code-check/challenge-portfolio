@@ -1,0 +1,19 @@
+{
+  "name": "challenge-github-account",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "api-first-spec": "^0.2.9",
+    "chai": "^3.4.1"
+  },
+  "dependencies": {
+    "request": "^2.67.0"
+  }
+}
