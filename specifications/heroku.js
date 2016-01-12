@@ -3,12 +3,12 @@
 var
   request = require('request');
 
-function isRunning (name, callback) {
-  function origin (appname) {
-    return 'https://' + appname + '.herokuapp.com';
+function isRunning (name, path, callback) {
+  function endpoint (appname, path) {
+    return 'https://' + appname + '.herokuapp.com' + (path || '/');
   }
   var options = {
-    uri: origin(name),
+    uri: endpoint(name, path),
     method: 'GET',
     json: true
   };
