@@ -3,9 +3,10 @@
     "*",
     "!specifications",
     "specifications/account.json",
-    "specifications/database.sql"
+    "specifications/database.sql",
+    "!.gitignore"
   ],
-  "exclude": [
+  "excludes": [
     "challenge.json"
   ],
   "readme": {
