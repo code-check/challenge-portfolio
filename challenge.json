@@ -2,7 +2,7 @@
   "editable": [
     "*",
     "specifications/account.json",
-    "specifications/database.sql"
+    "specifications/database.sql",
     "!specifications"
   ],
   "exclude": [
