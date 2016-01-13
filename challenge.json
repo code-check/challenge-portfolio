@@ -2,8 +2,6 @@
   "editable": [
     "*",
     "!specifications",
-    "specifications/account.json",
-    "specifications/database.sql",
     "!.gitignore"
   ],
   "excludes": [

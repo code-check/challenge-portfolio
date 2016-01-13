@@ -3,7 +3,7 @@
 var
   heroku = require('./heroku'),
   assert = require('chai').assert,
-  account = require('./account.json');
+  account = require('../account.json');
 
 describe('Verify Heroku Application', function() {
   it('should hosted', function (done) {

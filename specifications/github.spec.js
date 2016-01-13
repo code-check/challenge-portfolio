@@ -3,7 +3,7 @@
 var
   github = require('./github'),
   assert = require('chai').assert,
-  account = require('./account.json');
+  account = require('../account.json');
 
 describe('Verify GitHub Account', function() {
   it('should get right user', function (done) {

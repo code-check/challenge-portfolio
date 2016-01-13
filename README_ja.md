@@ -3,7 +3,7 @@
 ## GitHub アカウントの作成
 [GitHub](https://github.com/)にアクセスして自分のアカウントを作成しましょう。
 
-アカウントを作成したら[account.json](./specifications/account.json)の`github_username`の値に自身のGitHubのユーザー名を記入して保存してください。
+アカウントを作成したら[account.json](./account.json)の`github_username`の値に自身のGitHubのユーザー名を記入して保存してください。
 
 ```json
 {
@@ -27,7 +27,7 @@
 - DELETE /api/projects/:id
 
 ## データベース
-以下がデータベースの情報です。
+以下がデータベースの情報です。[database.sql](./database.sql)にファイルが提供されています。
 
 ```sql
 create projects (
@@ -42,7 +42,7 @@ create projects (
 ## Deploy to Heroku
 実装したサーバーを[Heroku](https://heroku.com)に[デプロイ](https://devcenter.heroku.com/categories/deployment)して下さい。
 
-デプロイ後、GitHubの時と同様に[account.json](./specifications/account.json)を開いて`heroku_appname`の値にHerokuのアプリケーション名を書いてください。アプリケーション名は`https://<appname>.herokuapp.com`の`<appname>`の部分と一致します。
+デプロイ後、GitHubの時と同様に[account.json](./account.json)を開いて`heroku_appname`の値にHerokuのアプリケーション名を書いてください。アプリケーション名は`https://<appname>.herokuapp.com`の`<appname>`の部分と一致します。
 
 ```json
 {
