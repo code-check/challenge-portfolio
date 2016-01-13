@@ -8,9 +8,8 @@ var API = spec.define({
   "endpoint": "/api/projects",
   "method": spec.Method.GET,
   "request": {
-    "contentType": spec.ContentType.MULTIPART,
+    "contentType": spec.ContentType.URLENCODED,
     "params": {
-      "image": "string",
       "title": "string",
       "url": "string",
       "description": "string"

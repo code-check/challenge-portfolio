@@ -8,7 +8,7 @@ var API = spec.define({
   "endpoint": "/api/projects/[id]",
   "method": spec.Method.GET,
   "request": {
-    "contentType": spec.ContentType.JSON,
+    "contentType": spec.ContentType.URLENCODED,
   },
   "response": {
     "contentType": spec.ContentType.JSON,
