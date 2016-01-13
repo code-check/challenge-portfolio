@@ -1,9 +1,11 @@
 {
   "editable": [
-    "github.json"
+    "*",
+    "specifications/account.json",
+    "specifications/database.sql"
+    "!specifications"
   ],
   "exclude": [
-    "README.md",
     "challenge.json"
   ],
   "readme": {
