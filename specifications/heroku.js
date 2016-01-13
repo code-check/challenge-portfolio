@@ -3,10 +3,12 @@
 var
   request = require('request');
 
+function endpoint (appname, path) {
+  return 'https://' + appname + '.herokuapp.com' + (path || '/');
+}
+
 function isRunning (name, path, callback) {
-  function endpoint (appname, path) {
-    return 'https://' + appname + '.herokuapp.com' + (path || '/');
-  }
+
   var options = {
     uri: endpoint(name, path),
     method: 'GET',
@@ -17,4 +19,5 @@ function isRunning (name, path, callback) {
 
 module.exports = {
   isRunning: isRunning,
+  endpoint: endpoint
 }
