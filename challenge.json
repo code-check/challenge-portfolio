@@ -5,6 +5,7 @@
     "!.gitignore"
   ],
   "excludes": [
+    "specifications/*.heroku.spec.js",
     "challenge.json"
   ],
   "readme": {
