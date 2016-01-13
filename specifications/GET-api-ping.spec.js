@@ -12,11 +12,11 @@ var API = spec.define({
   },
   "response": {
     "contentType": spec.ContentType.JSON,
-    "data": {}
+    "data": "any"
   }
 });
 
-describe("GET /api/projects", function () {
+describe("GET /api/ping", function () {
   var host = spec.host("localhost:3000");
 
   it("should succeed", function (done) {

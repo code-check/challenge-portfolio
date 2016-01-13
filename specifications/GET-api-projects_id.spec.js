@@ -12,7 +12,7 @@ var API = spec.define({
   },
   "response": {
     "contentType": spec.ContentType.JSON,
-    "data": {}
+    "data": "any"
   }
 });
 
@@ -25,7 +25,7 @@ describe("GET /api/projects/:id", function () {
     }).notFound(done);
   });
 
-  it("should succeed if exsits", function () {
+  it("should succeed if exsits", function (done) {
     host.api(API).params({
       id: 1
     }).success(done);

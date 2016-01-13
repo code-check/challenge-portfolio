@@ -12,7 +12,7 @@ var API = spec.define({
   },
   "response": {
     "contentType": spec.ContentType.JSON,
-    "data": {}
+    "data": "any"
   }
 });
 
