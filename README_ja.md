@@ -22,9 +22,13 @@
 
 以下の4つのAPIを実装してください
 - GET /api/projects
+  - [GET /api/projects spec](./GET-api-projects.spec.js)
 - POST /api/projects
+  - [POST /api/projects spec](./POST-api-projects.spec.js)
 - GET /api/projects/:id
+  - [GET /api/projects/:id spec](./GET-api-projects_id.spec.js)
 - DELETE /api/projects/:id
+  - [GET /api/projects/:id spec](./DELETE-api-projects_id.spec.js)
 
 ## データベース
 以下がデータベースの情報です。[database.sql](./database.sql)にファイルが提供されています。

@@ -12,12 +12,25 @@ Key is `github_username`.
 }
 ```
 
+## Implement Server API
 
+### Connection check API
+Implement API which will be used for connection check.
 
-## Implement project api
+- GET /api/ping
 
-- endpoint: `/api/projects(/:id)`
-- methods: `GET`, `POST`, `DELETE`
+### Project manage API
+
+Implement 4 APIs listed below. Links are pointing specifications for each API.
+- GET /api/projects
+  - [GET /api/projects spec](./GET-api-projects.spec.js)
+- POST /api/projects
+  - [POST /api/projects spec](./POST-api-projects.spec.js)
+- GET /api/projects/:id
+  - [GET /api/projects/:id spec](./GET-api-projects_id.spec.js)
+- DELETE /api/projects/:id
+  - [GET /api/projects/:id spec](./DELETE-api-projects_id.spec.js)
+
 
 ## Database
 [Here](./database.sql) is the database schema that we provide.
