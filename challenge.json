@@ -1,9 +1,9 @@
 {
   "editable": [
     "*",
+    "!specifications",
     "specifications/account.json",
-    "specifications/database.sql",
-    "!specifications"
+    "specifications/database.sql"
   ],
   "exclude": [
     "challenge.json"
