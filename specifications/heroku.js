@@ -7,17 +7,15 @@ function endpoint (appname, path) {
   return 'https://' + appname + '.herokuapp.com' + (path || '/');
 }
 
-function isRunning (name, path, callback) {
-
+function accessIndex (name, callback) {
   var options = {
-    uri: endpoint(name, path),
-    method: 'GET',
-    json: true
+    uri: endpoint(name),
+    method: 'HEAD',
   };
   request(options, callback);
 }
 
 module.exports = {
-  isRunning: isRunning,
+  accessIndex: accessIndex,
   endpoint: endpoint
 }

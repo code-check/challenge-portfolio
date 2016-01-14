@@ -3,22 +3,17 @@
 var
   request = require('request');
 
-function endpoint (path) {
-  return 'https://api.github.com' + path;
-}
-
-function getUser (username, callback) {
+function accessUserPage (username, callback) {
   var options = {
-    uri: endpoint('/users/' + username),
-    method: 'GET',
-    json: true,
+    uri: 'https://github.com/' + username,
+    method: 'HEAD',
     headers: {
-      'User-Agent': 'GitHub Account Challenge',
+      'User-Agent': 'codecheck challenge',
     }
   };
   request(options, callback);
 };
 
 module.exports = {
-  getUser: getUser,
+  accessUserPage: accessUserPage,
 }
