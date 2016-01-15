@@ -13,9 +13,9 @@
   },
   "keywords": [],
   "engine": {
-    "node": "4.2.1"
+    "node": "4.x"
   },
-  "author": "Givery",
+  "author": "Givery, Inc.",
   "license": "ISC",
   "devDependencies": {
     "api-first-spec": "^0.2.9",
