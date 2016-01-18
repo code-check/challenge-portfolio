@@ -19,7 +19,7 @@ var API = spec.define({
 });
 
 describe("GET /api/projects/:id", function () {
-  var host = spec.host(heroku.endpoint(appname, '/'));
+  var host = spec.host(heroku.origin(appname));
 
   it("should be not found if not exists", function (done) {
     host.api(API).params({

@@ -19,7 +19,7 @@ var API = spec.define({
 });
 
 describe("GET /api/ping", function () {
-  var host = spec.host(heroku.endpoint(appname, '/'));
+  var host = spec.host(heroku.origin(appname));
 
   it("should succeed", function (done) {
     host.api(API).success(done);

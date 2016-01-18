@@ -3,19 +3,10 @@
 var
   request = require('request');
 
-function endpoint (appname, path) {
-  return 'https://' + appname + '.herokuapp.com' + (path || '/');
-}
-
-function accessIndex (name, callback) {
-  var options = {
-    uri: endpoint(name),
-    method: 'HEAD',
-  };
-  request(options, callback);
+function origin (appname) {
+  return appname + '.herokuapp.com';
 }
 
 module.exports = {
-  accessIndex: accessIndex,
-  endpoint: endpoint
+  origin: origin
 }
