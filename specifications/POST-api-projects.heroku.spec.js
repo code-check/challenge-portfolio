@@ -35,7 +35,7 @@ var API = spec.define({
 });
 
 describe('POST /api/projects', function () {
-  var host = spec.host(heroku.endpoint(appname, '/api/projects'));
+  var host = spec.host(heroku.origin(appname));
 
   it('should contains title', function (done) {
     host.api(API).params({
