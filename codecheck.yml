@@ -1,7 +1,0 @@
-build:
-  - npm install
-web:
-  command: npm start
-  port: 3000
-  console: true
-test: mocha specifications
