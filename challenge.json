@@ -1,7 +1,7 @@
 {
   "editable": [
     "account.json",
-    "Answer.md"
+    "answer.md"
   ],
   "excludes": [
     "challenge.json"
