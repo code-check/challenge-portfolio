@@ -30,7 +30,12 @@ var API = spec.define({
   },
   "response": {
     "contentType": spec.ContentType.JSON,
-    "data": "any"
+    "data": {
+      "id": "int",
+      "title": "string",
+      "url": "string",
+      "description": "string"
+    },
   }
 });
 
