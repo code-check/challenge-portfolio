@@ -1,5 +1,4 @@
 # ポートフォリオを作ろう！
-自分の制作物を管理できる API を実装しよう！
 このチャレンジは [Heroku](https://heroku.com) でサーバーが立っている事が前提となります。
 始める前に Heroku でチャレンジ用の[アプリケーションを作って](https://dashboard.heroku.com/new)ください。
 
@@ -24,9 +23,10 @@ create table projects (
 
 ```json
 {
-  "heroku_appname": "<Write your Heroku application name here>"
+  "heroku_appname": "<App Name>"
 }
 ```
+`<App Name>` の部分を `<` と `>` も含めてアプリケーション名に修正してください。
 
 ## ステップ 2: テストを実行しつつ、サーバーを実装しよう！
 実装が必要なエンドポイントは次の4つです。  
@@ -53,7 +53,7 @@ create table projects (
 次の2つのコマンドをターミナル上で実行することでテストが可能です。
 
 ```bash
-$ npm install                      # モジュールのインストール
+$ npm install                      # モジュールのインストール (初回のみ実行)
 $ $(npm bin)/mocha specifications  # テストの実行
 ```
 
