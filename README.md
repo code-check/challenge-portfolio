@@ -26,39 +26,40 @@ Open [account.json](./account.json) and edit the value for `heroku_appname` to t
   "heroku_appname": "<App Name>"
 }
 ```
-Replace `<App Name>` to your application name, include `<` and `>`.
+Replace `<App Name>`, including `<` and `>`, to your application name.
 
 ## Step 2: Implement your server and check with Test!
 We require to implement 4 endpoints. All details of specifications are written in files with format of [api-first-spec](https://github.com/shunjikonishi/api-first-spec).
 
 - GET /api/projects
   - Return `200 OK` status code when server succeed to get data
-  - [GET /api/projects spec](./GET-api-projects.spec.js)
+  - [GET /api/projects spec](./localhost/GET-api-projects.spec.js)
 - POST /api/projects
   - Return `400 BadRequest` when either of title or description was empty
   - Return `200 OK` when server succeed to create new data
-  - title と description のどちらかが空の場合は `400 BadRequest` を返すこと
-  - [POST /api/projects spec](./POST-api-projects.spec.js)
+  - [POST /api/projects spec](./localhost/POST-api-projects.spec.js)
 - GET /api/projects/:id
   - Return `200 OK` when found data
   - Return `404 NotFound` when data didn't exists
-  - [GET /api/projects/:id spec](./GET-api-projects_id.spec.js)
+  - [GET /api/projects/:id spec](./localhost/GET-api-projects_id.spec.js)
 - DELETE /api/projects/:id
   - Return `200 OK` when data was successfully deleted
   - Return `404 NofFound` when data didn't exists
-  - [GET /api/projects/:id spec](./DELETE-api-projects_id.spec.js)
+  - [GET /api/projects/:id spec](./localhost/DELETE-api-projects_id.spec.js)
 
 ### Run Test
+To test your API server in local environment, run commands in below.
+
 ```bash
-$ npm install                     # Install modules (You need run this only once)
-$ $(npm bin)/mocha specifications # Run Test
+$ npm install                               # Install modules (You need run this at first time)
+$ $(npm bin)/mocha specifications/localhost # Run Test in local
 ```
 
 Make all test status as `passing`; there are several failing tests at beginning.
 
 ```
-36 passing (16s)
-  8 failing
+42 passing (16s)
+6 failing
 ```
 
 ## Step 3: Hack as you want!

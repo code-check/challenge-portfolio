@@ -34,34 +34,33 @@ create table projects (
 
 - GET /api/projects
   - データの取得に成功した場合は `200 OK` を返すこと
-  - [GET /api/projects spec](./GET-api-projects.spec.js)
+  - [GET /api/projects spec](./localhost/GET-api-projects.spec.js)
 - POST /api/projects
   - title と description のどちらかが空の場合は `400 BadRequest` を返すこと
   - データの生成に成功した場合は `200 OK` を返すこと
-  - [POST /api/projects spec](./POST-api-projects.spec.js)
+  - [POST /api/projects spec](./localhost/POST-api-projects.spec.js)
 - GET /api/projects/:id
   - データの取得に成功した場合は `200 OK` を返すこと
   - データが取得できなかった場合は `404 NotFound` を返すこと
-  - [GET /api/projects/:id spec](./GET-api-projects_id.spec.js)
+  - [GET /api/projects/:id spec](./localhost/GET-api-projects_id.spec.js)
 - DELETE /api/projects/:id
   - データの削除に成功した場合は `200 OK` を返すこと
   - 削除するデータが取得できなかった場合は `404 NotFound` を返すこと
-  - [GET /api/projects/:id spec](./DELETE-api-projects_id.spec.js)
+  - [GET /api/projects/:id spec](./localhost/DELETE-api-projects_id.spec.js)
 
 ### テストの実行  
-先に Node.js のモジュールをインストールしてから実行する必要があります。
-次の2つのコマンドをターミナル上で実行することでテストが可能です。
+次のコマンドをターミナル上で実行することでローカル環境でのテストが可能です。
 
 ```bash
-$ npm install                      # モジュールのインストール (初回のみ実行)
-$ $(npm bin)/mocha specifications  # テストの実行
+$ npm install                               # モジュールのインストール (初回のみ実行)
+$ $(npm bin)/mocha specifications/locahost  # ローカル環境でのテストの実行
 ```
 
 実装前は下のように `failing` 状態のテストがあるので、全てのテストを `passing` の状態にできるようにサーバーを実装して下さい。
 
 ```
-36 passing (16s)
-  8 failing
+42 passing (16s)
+6 failing
 ```
 
 ## ステップ 3: 自由に Hack しよう！
