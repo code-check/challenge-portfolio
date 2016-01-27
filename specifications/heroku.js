@@ -7,6 +7,11 @@ function origin (appname) {
   return appname + '.herokuapp.com';
 }
 
+function endpoint (appname, endpoint) {
+  return origin(appname) + (endpoint || '/');
+}
+
 module.exports = {
-  origin: origin
+  origin: origin,
+  endpoint: endpoint
 }
