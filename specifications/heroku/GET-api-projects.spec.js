@@ -4,7 +4,7 @@ var
   assert = require('chai').assert,
   spec   = require('api-first-spec'),
   heroku = require('./heroku'),
-  appname = require('../account.json').heroku_appname;
+  appname = require('../../account.json').heroku_appname;
 
 var API = spec.define({
   "endpoint": "/api/projects",

@@ -4,16 +4,13 @@ var
   assert = require('chai').assert,
   spec   = require('api-first-spec'),
   heroku = require('./heroku'),
-  appname = require('../account.json').heroku_appname;
+  appname = require('../../account.json').heroku_appname;
 
 var API = spec.define({
   "endpoint": "/api/projects/[id]",
-  "method": spec.Method.GET,
+  "method": spec.Method.DELETE,
   "request": {
     "contentType": spec.ContentType.URLENCODED,
-    "data": {
-      "id": "int"
-    }
   },
   "response": {
     "contentType": spec.ContentType.JSON,
@@ -21,7 +18,7 @@ var API = spec.define({
   }
 });
 
-describe("GET /api/projects/:id", function () {
+describe("DELETE /api/projects/:id", function () {
   function create (callback) {
     var options = {
       url: "https://" + heroku.endpoint(appname, '/api/projects'),
@@ -35,6 +32,7 @@ describe("GET /api/projects/:id", function () {
     };
     require('request')(options, callback);
   }
+
   before(function (done) {
     create(function (err, resp, body) {
       project.id = body.id;
@@ -44,7 +42,6 @@ describe("GET /api/projects/:id", function () {
       done();
     });
   });
-
   var project = {};
   var host = spec.host(heroku.origin(appname));
 
