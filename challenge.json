@@ -1,5 +1,6 @@
 {
   "editable": [
+    "specifications/database.sql",
     "account.json",
     "answer.md"
   ],
