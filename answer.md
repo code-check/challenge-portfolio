@@ -1,8 +1,9 @@
-## [アプリケーション名](DeployしたHerokuのURLをこちらに記入してください)
+## 基本概要
 
-### 作品の説明
+- Heroku URL: Deploy した Heroku の URL をこちらに記入してください。
+- GitHub Repository: Heroku アプリに使用した GitHub のリポジトリのURLをこちらに記入してください。
 
-### 独自で実装した内容
+### 追加で実装した内容
 
 ### 創意工夫した点
 
