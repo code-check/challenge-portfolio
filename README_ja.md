@@ -34,19 +34,19 @@ create table projects (
 
 - GET /api/projects
   - データの取得に成功した場合は `200 OK` を返すこと
-  - [GET /api/projects spec](./localhost/GET-api-projects.spec.js)
+  - [GET /api/projects spec](./specifications/localhost/GET-api-projects.spec.js)
 - POST /api/projects
   - title と description のどちらかが空の場合は `400 BadRequest` を返すこと
   - データの生成に成功した場合は `200 OK` を返すこと
-  - [POST /api/projects spec](./localhost/POST-api-projects.spec.js)
+  - [POST /api/projects spec](./specifications/localhost/POST-api-projects.spec.js)
 - GET /api/projects/:id
   - データの取得に成功した場合は `200 OK` を返すこと
   - データが取得できなかった場合は `404 NotFound` を返すこと
-  - [GET /api/projects/:id spec](./localhost/GET-api-projects_id.spec.js)
+  - [GET /api/projects/:id spec](./specifications/localhost/GET-api-projects_id.spec.js)
 - DELETE /api/projects/:id
   - データの削除に成功した場合は `200 OK` を返すこと
   - 削除するデータが取得できなかった場合は `404 NotFound` を返すこと
-  - [GET /api/projects/:id spec](./localhost/DELETE-api-projects_id.spec.js)
+  - [GET /api/projects/:id spec](./specifications/localhost/DELETE-api-projects_id.spec.js)
 
 ### テストの実行  
 次のコマンドをターミナル上で実行することでローカル環境でのテストが可能です。

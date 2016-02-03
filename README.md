@@ -33,19 +33,19 @@ We require to implement 4 endpoints. All details of specifications are written i
 
 - GET /api/projects
   - Return `200 OK` status code when server succeed to get data
-  - [GET /api/projects spec](./localhost/GET-api-projects.spec.js)
+  - [GET /api/projects spec](./specifications/localhost/GET-api-projects.spec.js)
 - POST /api/projects
   - Return `400 BadRequest` when either of title or description was empty
   - Return `200 OK` when server succeed to create new data
-  - [POST /api/projects spec](./localhost/POST-api-projects.spec.js)
+  - [POST /api/projects spec](./specifications/localhost/POST-api-projects.spec.js)
 - GET /api/projects/:id
   - Return `200 OK` when found data
   - Return `404 NotFound` when data didn't exists
-  - [GET /api/projects/:id spec](./localhost/GET-api-projects_id.spec.js)
+  - [GET /api/projects/:id spec](./specifications/localhost/GET-api-projects_id.spec.js)
 - DELETE /api/projects/:id
   - Return `200 OK` when data was successfully deleted
   - Return `404 NofFound` when data didn't exists
-  - [GET /api/projects/:id spec](./localhost/DELETE-api-projects_id.spec.js)
+  - [GET /api/projects/:id spec](./specifications/localhost/DELETE-api-projects_id.spec.js)
 
 ### Run Test
 To test your API server in local environment, run commands in below.
