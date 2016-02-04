@@ -2,7 +2,9 @@
   "editable": [
     "specifications/database.sql",
     "account.json",
-    "answer.md"
+    "answer.md",
+    ".gitignore",
+    "package.json"
   ],
   "excludes": [
     "challenge.json"
