@@ -53,7 +53,7 @@ create table projects (
 
 ```bash
 $ npm install                               # モジュールのインストール (初回のみ実行)
-$ $(npm bin)/mocha specifications/locahost  # ローカル環境でのテストの実行
+$ $(npm bin)/mocha specifications/localhost  # ローカル環境でのテストの実行
 ```
 
 実装前は下のように `failing` 状態のテストがあるので、全てのテストを `passing` の状態にできるようにサーバーを実装して下さい。
