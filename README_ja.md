@@ -1,6 +1,20 @@
 # ポートフォリオを作ろう！
-このチャレンジは [Heroku](https://heroku.com) でサーバーが立っている事が前提となります。
-始める前に Heroku でチャレンジ用の[アプリケーションを作って](https://dashboard.heroku.com/new)ください。
+ポートフォリオに載せるプロジェクトの管理をするための Web API を実装しよう！
+
+## 前提条件
+このチャレンジは [GitHub](https://github.com) のアカウントと [Heroku](https://heroku.com) でサーバーが立っている事が前提となります。
+始める前に GitHub で[アカウントを作成](https://github.com/join)し、 Heroku でチャレンジ用の[アプリケーションを作って](https://dashboard.heroku.com/new)ください。
+
+GitHubのアカウントが無い人は次のチャレンジを受けて、GitHubのアカウントを作成しましょう。  
+https://app.code-check.io/orgs/codecheck_official/challenges/70
+
+Heroku でのデプロイの方法が分からない方は下のチャレンジのうち、自分の使いたいフレームワークのチャレンジに挑戦してみましょう！
+
+- Django: https://app.code-check.io/orgs/codecheck_official/challenges/71
+- Node.js: https://app.code-check.io/orgs/codecheck_official/challenges/69
+- Laravel: https://app.code-check.io/orgs/codecheck_official/challenges/73
+- Ruby on Rails: https://app.code-check.io/orgs/codecheck_official/challenges/75
+- Spring: https://app.code-check.io/orgs/codecheck_official/challenges/72
 
 ## データベース
 以下が今回のチャレンジで必要となるデータベースの情報です。
@@ -63,9 +77,3 @@ $ $(npm bin)/mocha specifications/localhost  # ローカル環境でのテスト
 6 failing
 ```
 
-## ステップ 3: 自由に Hack しよう！
-こちらが用意した全てのテストが通るようになれば、あとは自由にハックするのみ！上で用意されたテストをパスしている限りどんな追加も変更もOKです！
-自分が追加、工夫した点を [answer.md](./answer.md) に書いてアピールしてください！
-
-サーバーサイドの実装に自信がある人は新しいエンドポイントやパラメータ、データのバリデーション追加、
-クライアントサイドの実装に自信がある人は実装したサーバーを活用したフロントの実装などを追加してください！。
