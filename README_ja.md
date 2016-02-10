@@ -3,18 +3,18 @@
 
 ## 前提条件
 このチャレンジは [GitHub](https://github.com) のアカウントと [Heroku](https://heroku.com) でサーバーが立っている事が前提となります。
-始める前に GitHub で[アカウントを作成](https://github.com/join)し、 Heroku でチャレンジ用の[アプリケーションを作って](https://dashboard.heroku.com/new)ください。
+始める前に GitHub で[アカウントを作成](https://github.com/join)し、 [Herokuでチャレンジ用のアプリケーションを作って](https://dashboard.heroku.com/new)ください。
 
 GitHubのアカウントが無い人は次のチャレンジを受けて、GitHubのアカウントを作成しましょう。  
-https://app.code-check.io/orgs/codecheck_official/challenges/70
+- [GitHubアカウントを作成しよう](https://app.code-check.io/orgs/codecheck_official/challenges/70)
 
-Heroku でのデプロイの方法が分からない方は下のチャレンジのうち、自分の使いたいフレームワークのチャレンジに挑戦してみましょう！
-
-- Django: https://app.code-check.io/orgs/codecheck_official/challenges/71
-- Node.js: https://app.code-check.io/orgs/codecheck_official/challenges/69
-- Laravel: https://app.code-check.io/orgs/codecheck_official/challenges/73
-- Ruby on Rails: https://app.code-check.io/orgs/codecheck_official/challenges/75
-- Spring: https://app.code-check.io/orgs/codecheck_official/challenges/72
+Herokuでのデプロイの方法が分からない方は、この問題を解く前に、以下のチャレンジの中から自分の使いたいフレームワークのチャレンジに挑戦してみましょう！
+- SPRINT Deploy Challenge
+  - [Django](https://app.code-check.io/orgs/codecheck_official/challenges/71)
+  - [Node.js](https://app.code-check.io/orgs/codecheck_official/challenges/69)
+  - [Laravel](https://app.code-check.io/orgs/codecheck_official/challenges/73)
+  - [Ruby on Rails](https://app.code-check.io/orgs/codecheck_official/challenges/75)
+  - [Spring](https://app.code-check.io/orgs/codecheck_official/challenges/72)
 
 ## データベース
 以下が今回のチャレンジで必要となるデータベースの情報です。
