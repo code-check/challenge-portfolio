@@ -1,6 +1,20 @@
 # Make your own portfolio!
-This challenge assume that there is a server hosted by [Heroku](https://heroku.com).
-Please [make a new application](https://dashboard.heroku.com/new) for this challenge in Heroku.
+Implement Web APIs to manage your projects for portfolio!
+
+## Requirements
+This challenge assume that you have a [GitHub](https://github.com) account and there is a server hosted by [Heroku](https://heroku.com).
+ Before you start this challenge, please [make a GitHub account](https://github.com/join) and [make a new Heroku application](https://dashboard.heroku.com/new) for this challenge.
+
+If you don't have GitHub account, please take this challenge and make your own GitHub account!
+https://app.code-check.io/orgs/codecheck_official/challenges/70
+
+If you are not familiar with deploy in Heroku, choose one framework that you want to use and take a challenge from below.
+
+- Django: https://app.code-check.io/orgs/codecheck_official/challenges/71
+- Node.js: https://app.code-check.io/orgs/codecheck_official/challenges/69
+- Laravel: https://app.code-check.io/orgs/codecheck_official/challenges/73
+- Ruby on Rails: https://app.code-check.io/orgs/codecheck_official/challenges/75
+- Spring: https://app.code-check.io/orgs/codecheck_official/challenges/72
 
 ## Database
 Information for this challenge is specified in below.
@@ -62,8 +76,3 @@ Make all test status as `passing`; there are several failing tests at beginning.
 6 failing
 ```
 
-## Step 3: Hack as you want!
-As long as our tests pass, it is free to hack in your own way! Please write features that you add and your thoughts about why / how you add that features to [answer.md](./answer.md).
-
-If you are back-end developer, adding validation, new parameter, or implement new endpoints would be a good option to show your skills.
-For front-end developer, implement front page using the API that you have implemented.
