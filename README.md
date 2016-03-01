@@ -5,17 +5,6 @@ Implement Web APIs to manage your projects for portfolio!
 This challenge assume that you have a [GitHub](https://github.com) account and there is a server hosted by [Heroku](https://heroku.com).
  Before you start this challenge, please [make a GitHub account](https://github.com/join) and [make a new Heroku application](https://dashboard.heroku.com/new) for this challenge.
 
-If you don't have GitHub account, please take this challenge and make your own GitHub account!
-https://app.code-check.io/orgs/codecheck_official/challenges/70
-
-If you are not familiar with deploy in Heroku, choose one framework that you want to use and take a challenge from below.
-
-- Django: https://app.code-check.io/orgs/codecheck_official/challenges/71
-- Node.js: https://app.code-check.io/orgs/codecheck_official/challenges/69
-- Laravel: https://app.code-check.io/orgs/codecheck_official/challenges/73
-- Ruby on Rails: https://app.code-check.io/orgs/codecheck_official/challenges/75
-- Spring: https://app.code-check.io/orgs/codecheck_official/challenges/72
-
 ## Database
 Information for this challenge is specified in below.
 It is also provided in [database.sql](./specifications/database.sql) file.
@@ -75,4 +64,3 @@ Make all test status as `passing`; there are several failing tests at beginning.
 42 passing (16s)
 6 failing
 ```
-
