@@ -3,8 +3,8 @@
 var
   assert = require('chai').assert,
   spec   = require('api-first-spec'),
-  heroku = require('./heroku'),
-  appname = require('../../account.json').heroku_appname;
+  remote = require('./remote'),
+  hostname = require('../../service.json').hostname;
 
 var API = spec.define({
   "endpoint": "/api/projects",
@@ -19,7 +19,7 @@ var API = spec.define({
 });
 
 describe("GET /api/projects", function () {
-  var host = spec.host(heroku.origin(appname));
+  var host = spec.host(hostname);
 
   it("should succeed", function (done) {
     host.api(API).success(done);

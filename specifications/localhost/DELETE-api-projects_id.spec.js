@@ -47,7 +47,7 @@ describe("DELETE /api/projects/:id", function () {
   it("should be not found if not exists", function (done) {
     host.api(API).params({
       id: -1
-    }).notFound(done);
+    }).isClientError(done);
   });
 
   it("should succeed if exsits", function (done) {

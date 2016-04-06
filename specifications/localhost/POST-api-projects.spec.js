@@ -45,14 +45,14 @@ describe('POST /api/projects', function () {
     host.api(API).params({
       description: 'long long description',
       url: 'http://example.com',
-    }).badRequest(done);
+    }).isClientError(done);
   });
 
   it('should contains description', function (done) {
     host.api(API).params({
       title: 'title',
       url: 'http://example.com',
-    }).badRequest(done);
+    }).isClientError(done);
   });
 
   it('should succeed', function (done) {

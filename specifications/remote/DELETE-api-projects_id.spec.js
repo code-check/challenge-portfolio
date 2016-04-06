@@ -3,8 +3,8 @@
 var
   assert = require('chai').assert,
   spec   = require('api-first-spec'),
-  heroku = require('./heroku'),
-  appname = require('../../account.json').heroku_appname;
+  remote = require('./remote'),
+  hostname = require('../../service.json').hostname;
 
 var API = spec.define({
   "endpoint": "/api/projects/[id]",
@@ -21,7 +21,7 @@ var API = spec.define({
 describe("DELETE /api/projects/:id", function () {
   function create (callback) {
     var options = {
-      url: "https://" + heroku.endpoint(appname, '/api/projects'),
+      url: "https://" + remote.endpoint(hostname, '/api/projects'),
       method: "POST",
       json: true,
       form: {
@@ -43,12 +43,12 @@ describe("DELETE /api/projects/:id", function () {
     });
   });
   var project = {};
-  var host = spec.host(heroku.origin(appname));
+  var host = spec.host(hostname);
 
   it("should be not found if not exists", function (done) {
     host.api(API).params({
       id: -1
-    }).notFound(done);
+    }).clientError(done);
   });
 
   it("should succeed if exsits", function (done) {
