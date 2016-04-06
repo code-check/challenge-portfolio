@@ -14,10 +14,9 @@
     "ja": "README_ja.md"
   },
   "allowNewFile": true,
-  "test": "mocha specifications/heroku",
+  "test": "mocha specifications/remote",
   "tags": [
       "AnyLanguage",
-      "WebAPI",
-      "Heroku"
+      "WebAPI"
   ]
 }
