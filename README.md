@@ -32,33 +32,34 @@ create table projects (
   );
 ```
 
-## Step 1: Edit account.json
-Open [account.json](./account.json) and edit the value for `heroku_appname` to the application that you have hosted.
+## Step 1: Edit server.json
+Open [server.json](./server.json) and edit the value for `hostname` to the domain or IP address of server that you have hosted.
 
 ```json
 {
-  "heroku_appname": "<App Name>"
+  "hostname": "hosted-server.domain.com"
 }
 ```
-Replace `<App Name>`, including `<` and `>`, to your application name.
+
+Replace `hosted-server.domain.com` with your domain or IP address.
 
 ## Step 2: Implement your server and check with Test!
 We require to implement 4 endpoints. All details of specifications are written in files with format of [api-first-spec](https://github.com/shunjikonishi/api-first-spec).
 
 - GET /api/projects
-  - Return `200 OK` status code when server succeed to get data
+  - Return success status code `2XX` when server succeed to get data
   - [GET /api/projects spec](./specifications/localhost/GET-api-projects.spec.js)
 - POST /api/projects
-  - Return `400 BadRequest` when either of title or description was empty
-  - Return `200 OK` when server succeed to create new data
+  - Return success status code `2XX` when server succeed to create new data
+  - Return error status code `4XX` when either of title or description was empty
   - [POST /api/projects spec](./specifications/localhost/POST-api-projects.spec.js)
 - GET /api/projects/:id
-  - Return `200 OK` when found data
-  - Return `404 NotFound` when data didn't exists
+  - Return success status code `2XX` when found data
+  - Return error status code `4XX` when data didn't exists
   - [GET /api/projects/:id spec](./specifications/localhost/GET-api-projects_id.spec.js)
 - DELETE /api/projects/:id
-  - Return `200 OK` when data was successfully deleted
-  - Return `404 NofFound` when data didn't exists
+  - Return success code `2XX` when data was successfully deleted
+  - Return error status code `4XX` when data didn't exists
   - [GET /api/projects/:id spec](./specifications/localhost/DELETE-api-projects_id.spec.js)
 
 ### Run Test

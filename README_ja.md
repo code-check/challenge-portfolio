@@ -32,34 +32,34 @@ create table projects (
   );
 ```
 
-## ステップ 1: account.json の記入
-[account.json](./account.json)の `heroku_appname` の値に実装で使う Heroku のアプリケーション名を入力してください。（`App Name` の項目に入力した内容）  
+## Step 1: Edit server.json
+[server.json](./server.json)の `hostname` の値に今回ホスティングしたサーバーのドメインもしくはIPアドレスを入力してください。
 
 ```json
 {
-  "heroku_appname": "<App Name>"
+  "hostname": "hosted-server.domain.com"
 }
 ```
-`<App Name>` の部分を `<` と `>` も含めてアプリケーション名に修正してください。
+`hosted-server.domain.com` の部分ホストしてあるサーバー、もしくはドメインを書き換えてください。
 
 ## ステップ 2: テストを実行しつつ、サーバーを実装しよう！
 実装が必要なエンドポイントは次の4つです。  
 このAPIが満たすべき仕様の詳細については [api-first-spec](https://github.com/shunjikonishi/api-first-spec) によって表記されています。仕様が書かれたファイルへのリンクもあるので実際に確認してみてください。
 
 - GET /api/projects
-  - データの取得に成功した場合は `200 OK` を返すこと
+  - データの取得に成功した場合、HTTP Status Code は正常系 (2XX) を返すこと
   - [GET /api/projects spec](./specifications/localhost/GET-api-projects.spec.js)
 - POST /api/projects
-  - title と description のどちらかが空の場合は `400 BadRequest` を返すこと
-  - データの生成に成功した場合は `200 OK` を返すこと
+  - データの生成に成功した場合、HTTP Status Code は正常系 (2XX) を返すこと
+  - title と description のどちらかが空の場合、HTTP Status Code はクライアントエラー (4XX) を返すこと
   - [POST /api/projects spec](./specifications/localhost/POST-api-projects.spec.js)
 - GET /api/projects/:id
-  - データの取得に成功した場合は `200 OK` を返すこと
-  - データが取得できなかった場合は `404 NotFound` を返すこと
+  - データの取得に成功した場合、HTTP Status Code は正常系 (2XX) を返すこと
+  - データが取得できなかった場合、HTTP Status Code はクライアントエラー (4XX) を返すこと
   - [GET /api/projects/:id spec](./specifications/localhost/GET-api-projects_id.spec.js)
 - DELETE /api/projects/:id
-  - データの削除に成功した場合は `200 OK` を返すこと
-  - 削除するデータが取得できなかった場合は `404 NotFound` を返すこと
+  - データの削除に成功した場合、HTTP Status Code は正常系 (2XX) を返すこと
+  - 削除するデータが取得できなかった場合、HTTP Status Code はクライアントエラー (4XX) を返すこと
   - [GET /api/projects/:id spec](./specifications/localhost/DELETE-api-projects_id.spec.js)
 
 ### テストの実行  
