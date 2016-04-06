@@ -2,19 +2,7 @@
 ポートフォリオに載せるプロジェクトの管理をするための Web API を実装しよう！
 
 ## 前提条件
-このチャレンジは [GitHub](https://github.com) のアカウントと [Heroku](https://heroku.com) でサーバーが立っている事が前提となります。
-始める前に GitHub で[アカウントを作成](https://github.com/join)し、 [Herokuでチャレンジ用のアプリケーションを作って](https://dashboard.heroku.com/new)ください。
-
-GitHubのアカウントが無い人は次のチャレンジを受けて、GitHubのアカウントを作成しましょう。  
-- [GitHubアカウントを作成しよう](https://app.code-check.io/orgs/codecheck_official/challenges/70)
-
-Herokuでのデプロイの方法が分からない方は、この問題を解く前に、以下のチャレンジの中から自分の使いたいフレームワークのチャレンジに挑戦してみましょう！
-- SPRINT Deploy Challenge
-  - [Django](https://app.code-check.io/orgs/codecheck_official/challenges/71)
-  - [Node.js](https://app.code-check.io/orgs/codecheck_official/challenges/69)
-  - [Laravel](https://app.code-check.io/orgs/codecheck_official/challenges/73)
-  - [Ruby on Rails](https://app.code-check.io/orgs/codecheck_official/challenges/75)
-  - [Spring](https://app.code-check.io/orgs/codecheck_official/challenges/72)
+このチャレンジは実装されたサーバーが、インターネット上に公開されている事を前提とします。
 
 ## データベース
 以下が今回のチャレンジで必要となるデータベースの情報です。
@@ -66,7 +54,7 @@ create table projects (
 次のコマンドをターミナル上で実行することでローカル環境でのテストが可能です。
 
 ```bash
-$ npm install                               # モジュールのインストール (初回のみ実行)
+$ npm install                                # モジュールのインストール (初回のみ実行)
 $ $(npm bin)/mocha specifications/localhost  # ローカル環境でのテストの実行
 ```
 
@@ -76,10 +64,3 @@ $ $(npm bin)/mocha specifications/localhost  # ローカル環境でのテスト
 42 passing (16s)
 6 failing
 ```
-
-## ステップ 3: 提出の完了と申請フォームの入力
-正しく解答が完了したら、
-- [MEETUP・賞品申請フォーム](http://j.mp/sprint_meetupform)
-の入力を完了しましょう。  
-  
-フォームの入力が完了したら、今回のSPRINTの「①基本機能(API)を実装しよう」は完了です。
